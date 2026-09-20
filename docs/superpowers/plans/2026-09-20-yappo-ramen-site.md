@@ -4,7 +4,7 @@
 
 **Goal:** Build and validate a complete responsive one-page website for Yappo — Ramen & Izakaya using verified business information and selected local photographs.
 
-**Architecture:** A dependency-free static site keeps delivery simple and matches the reference project's architecture. `index.html` contains the semantic page, visual system, and small interaction layer; `assets/images/` contains a curated set of renamed local photographs; `tests/site-smoke.mjs` verifies content, accessibility hooks, and local asset integrity.
+**Architecture:** A dependency-free static site keeps delivery simple and matches the reference project's architecture. `dist/index.html` contains the semantic page, visual system, and small interaction layer; `dist/assets/images/` contains a curated set of renamed local photographs; `tests/site-smoke.mjs` verifies content, accessibility hooks, and local asset integrity. `.openai/hosting.json` declares `dist` as the publishable static directory.
 
 **Tech Stack:** HTML5, modern CSS, vanilla JavaScript, Node.js smoke test, local image assets.
 
@@ -22,14 +22,15 @@
 ### Task 1: Asset set and automated smoke test
 
 **Files:**
-- Create: `assets/images/hero-ramen.jpg`
-- Create: `assets/images/ramen-spicy.jpg`
-- Create: `assets/images/ramen-selection.jpg`
-- Create: `assets/images/yakitori.jpg`
-- Create: `assets/images/karaage.jpg`
-- Create: `assets/images/takoyaki.jpg`
-- Create: `assets/images/dessert.jpg`
-- Create: `assets/images/interior.jpg`
+- Create: `.openai/hosting.json`
+- Create: `dist/assets/images/hero-ramen.jpg`
+- Create: `dist/assets/images/ramen-spicy.jpg`
+- Create: `dist/assets/images/ramen-selection.jpg`
+- Create: `dist/assets/images/yakitori.jpg`
+- Create: `dist/assets/images/karaage.jpg`
+- Create: `dist/assets/images/takoyaki.jpg`
+- Create: `dist/assets/images/dessert.jpg`
+- Create: `dist/assets/images/interior.jpg`
 - Create: `tests/site-smoke.mjs`
 
 **Interfaces:**
@@ -38,34 +39,34 @@
 
 - [ ] **Step 1: Write the failing smoke test**
 
-Create `tests/site-smoke.mjs` with assertions that `index.html` exists; includes `lang="it"`, title, description, Restaurant JSON-LD, all required section IDs, booking/menu/telephone/map/Instagram links, mobile-menu ARIA attributes, lightbox dialog semantics, `prefers-reduced-motion`, and at least eight images with non-empty alt text. Extract every local `src` and assert its file exists.
+Create `tests/site-smoke.mjs` with assertions that `dist/index.html` exists; includes `lang="it"`, title, description, Restaurant JSON-LD, all required section IDs, booking/menu/telephone/map/Instagram links, mobile-menu ARIA attributes, lightbox dialog semantics, `prefers-reduced-motion`, and at least eight images with non-empty alt text. Extract every local `src` and assert its file exists.
 
 - [ ] **Step 2: Run the test and verify it fails**
 
 Run: `node tests/site-smoke.mjs`
 
-Expected: failure because `index.html` is not present.
+Expected: failure because `dist/index.html` is not present.
 
 - [ ] **Step 3: Copy the selected photographs into stable paths**
 
-Copy the chosen source images into `assets/images/` with the exact names above. Use `sips -Z 1800` on copied files only when a long edge exceeds 1800 pixels; keep original source files unchanged.
+Create `.openai/hosting.json` with `{ "static": { "directory": "dist" } }`. Copy the chosen source images into `dist/assets/images/` with the exact names above. Use `sips -Z 1800` on copied files only when a long edge exceeds 1800 pixels; keep original source files unchanged.
 
 - [ ] **Step 4: Commit the test and curated assets**
 
 Run:
 
 ```bash
-git add tests/site-smoke.mjs assets/images
+git add .openai/hosting.json tests/site-smoke.mjs dist/assets/images
 git commit -m "test: define Yappo site acceptance checks"
 ```
 
 ### Task 2: Semantic page and visual system
 
 **Files:**
-- Create: `index.html`
+- Create: `dist/index.html`
 
 **Interfaces:**
-- Consumes: descriptive files from `assets/images/`.
+- Consumes: descriptive files from `dist/assets/images/`.
 - Produces: anchors `#storia`, `#menu`, `#esperienza`, `#galleria`, and `#contatti`; reusable `.btn`, `.section`, `.eyebrow`, `.display`, `.reveal`, and `.gallery-item` classes; DOM hooks `navToggle`, `mobileMenu`, `lightbox`, `lightboxImage`, `lightboxCaption`, `lightboxPrev`, `lightboxNext`, and `lightboxClose`.
 
 - [ ] **Step 1: Build the document metadata and structured data**
@@ -99,14 +100,14 @@ Expected: metadata, content, section, link, and asset checks pass; any interacti
 Run:
 
 ```bash
-git add index.html
+git add dist/index.html
 git commit -m "feat: build Yappo Ramen landing page"
 ```
 
 ### Task 3: Interaction and accessibility behavior
 
 **Files:**
-- Modify: `index.html`
+- Modify: `dist/index.html`
 - Modify: `tests/site-smoke.mjs`
 
 **Interfaces:**
@@ -142,14 +143,14 @@ Expected: `All Yappo site checks passed.`
 Run:
 
 ```bash
-git add index.html tests/site-smoke.mjs
+git add dist/index.html tests/site-smoke.mjs
 git commit -m "feat: add accessible Yappo site interactions"
 ```
 
 ### Task 4: Local serving, responsive verification, and delivery
 
 **Files:**
-- Modify: `index.html` only if verification exposes a concrete defect.
+- Modify: `dist/index.html` only if verification exposes a concrete defect.
 
 **Interfaces:**
 - Consumes: completed static site.
@@ -182,6 +183,6 @@ Expected: `All Yappo site checks passed.`
 Run:
 
 ```bash
-git add index.html tests/site-smoke.mjs
+git add dist/index.html tests/site-smoke.mjs
 git commit -m "fix: polish responsive Yappo presentation"
 ```
