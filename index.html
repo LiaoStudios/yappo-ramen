@@ -1,713 +1,825 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yappo — Ramen & Izakaya a San Lazzaro di Savena</title>
-  <meta name="description" content="Yappo è ramen e cucina giapponese contemporanea a San Lazzaro di Savena: brodi curati, yakitori, street food e piatti da condividere.">
-  <meta name="theme-color" content="#f7f4ee">
-  <meta property="og:type" content="restaurant">
-  <meta property="og:title" content="Yappo — Ramen & Izakaya">
-  <meta property="og:description" content="Tradizione giapponese, spirito contemporaneo. Via Emilia 169C, San Lazzaro di Savena.">
-  <meta property="og:locale" content="it_IT">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add("js");</script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Yappo - Ramen & Izakaya",
-    "description": "Ramen e cucina giapponese contemporanea a San Lazzaro di Savena.",
-    "telephone": "+39 051 040 0065",
-    "priceRange": "€€",
-    "servesCuisine": ["Giapponese", "Ramen", "Izakaya"],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Via Emilia 169C",
-      "postalCode": "40068",
-      "addressLocality": "San Lazzaro di Savena",
-      "addressRegion": "BO",
-      "addressCountry": "IT"
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yappo — Ramen & Izakaya a San Lazzaro di Savena</title>
+<meta name="description" content="Yappo è ramen e cucina giapponese contemporanea a San Lazzaro di Savena: brodi curati, yakitori, street food e piatti da condividere. Via Emilia 169C.">
+<meta name="theme-color" content="#fdfbf7">
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Yappo — Ramen & Izakaya">
+<meta property="og:description" content="Tradizione giapponese, spirito contemporaneo. Via Emilia 169C, San Lazzaro di Savena.">
+<meta property="og:locale" content="it_IT">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23b6d5e4'/%3E%3Ctext x='32' y='44' font-size='34' font-weight='700' text-anchor='middle' font-family='Arial,sans-serif' fill='%23121212'%3EY%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Knewave&display=swap">
+<script>document.documentElement.classList.add("js");</script>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Yappo - Ramen & Izakaya",
+  "description": "Ramen e cucina giapponese contemporanea a San Lazzaro di Savena.",
+  "telephone": "+39 051 040 0065",
+  "priceRange": "€€",
+  "servesCuisine": ["Giapponese", "Ramen", "Izakaya"],
+  "hasMenu": "https://www.thefork.it/ristorante/yappo-ramen-izakaya-r864529/menu",
+  "acceptsReservations": "https://pnssm.pro/4ehzlqm",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Emilia 169C",
+    "postalCode": "40068",
+    "addressLocality": "San Lazzaro di Savena",
+    "addressRegion": "BO",
+    "addressCountry": "IT"
+  },
+  "sameAs": ["https://www.instagram.com/yappo_bologna/"],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "12:00",
+      "closes": "15:00"
     },
-    "sameAs": ["https://www.instagram.com/yappo_bologna/"],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "12:00",
-        "closes": "15:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "19:00",
-        "closes": "23:00"
-      }
-    ]
-  }
-  </script>
-  <style>
-    :root {
-      --paper: #f7f4ee;
-      --paper-deep: #ebe5da;
-      --ink: #101113;
-      --muted: #66635e;
-      --sand: #ddd2c2;
-      --sky: #b9d6df;
-      --sky-deep: #769dab;
-      --white: #fffdf8;
-      --line: rgba(16, 17, 19, .16);
-      --line-light: rgba(255, 253, 248, .18);
-      --ease: cubic-bezier(.2, .75, .25, 1);
-      --max: 1280px;
-      --serif: "Shippori Mincho", Georgia, serif;
-      --sans: "DM Sans", Arial, sans-serif;
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "19:00",
+      "closes": "23:00"
     }
+  ]
+}
+</script>
 
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; background: var(--paper); }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--sans);
-      font-size: 1rem;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-    body.menu-open, body.lightbox-open { overflow: hidden; }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    button { color: inherit; font: inherit; }
-    :focus-visible { outline: 3px solid var(--sky-deep); outline-offset: 4px; }
+<style>
+/* ==========================================================
+   DESIGN TOKENS — bianco, nero, beige, azzurrino
+   ========================================================== */
+:root{
+  --accent:#b6d5e4;            /* azzurrino: superfici, bottoni, hover */
+  --accent-mid:#5b93af;        /* azzurro per titoli grandi in corsivo */
+  --accent-ink:#37677f;        /* azzurro scuro per testo piccolo */
+  --accent-soft:rgba(182,213,228,.34);
+  --bg:#fdfbf7;                /* bianco caldo */
+  --bg2:#efe6d6;               /* beige */
+  --dark:#121212;              /* nero inchiostro */
+  --ink:#121212;
+  --muted:#645e55;
+  --line:rgba(18,18,18,.12);
+  --line-dark:rgba(253,251,247,.16);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --maxw:1280px;
+  --display:'Knewave','Satoshi',system-ui,sans-serif;   /* pennello, come il logo */
+  --label:'Satoshi','Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg);-webkit-text-size-adjust:100%}
+body{
+  font-family:'Satoshi','Inter',system-ui,-apple-system,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body.lightbox-open{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;color:inherit}
+ul{list-style:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+section[id]{scroll-margin-top:72px}
+:focus-visible{outline:2px solid var(--accent-ink);outline-offset:3px;border-radius:3px}
 
-    .skip-link {
-      position: fixed; top: 12px; left: 12px; z-index: 200;
-      padding: 12px 18px; background: var(--ink); color: var(--white);
-      transform: translateY(-160%); transition: transform .2s ease;
-    }
-    .skip-link:focus { transform: translateY(0); }
-    .wrap { width: min(100% - 40px, var(--max)); margin-inline: auto; }
-    .section { padding: clamp(88px, 11vw, 158px) 0; }
-    .display { font-family: var(--serif); }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 12px;
-      font-size: .75rem; font-weight: 700; letter-spacing: .22em;
-      line-height: 1.2; text-transform: uppercase;
-    }
-    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--sky-deep); }
-    .eyebrow.light::before { background: var(--sky); }
-    .eyebrow.light { color: var(--paper); }
-    .section-title {
-      margin: 20px 0 0; max-width: 12ch;
-      font-family: var(--serif); font-weight: 600;
-      font-size: clamp(3rem, 7vw, 6.8rem); letter-spacing: -.055em;
-      line-height: .96;
-    }
-    .section-title em { color: var(--sky-deep); font-style: normal; }
-    .section-intro {
-      max-width: 40ch; margin: 24px 0 0; color: var(--muted);
-      font-size: clamp(1.05rem, 1.4vw, 1.25rem); line-height: 1.7;
-    }
+.skip-link{
+  position:fixed;top:12px;left:12px;z-index:300;padding:12px 18px;background:var(--dark);color:#fff;
+  font-weight:700;transform:translateY(-160%);transition:transform .2s ease;
+}
+.skip-link:focus{transform:none}
 
-    .btn {
-      display: inline-flex; min-height: 52px; align-items: center; justify-content: center;
-      gap: 12px; padding: 0 26px; border: 1px solid transparent; border-radius: 999px;
-      font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
-      transition: transform .3s var(--ease), background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn-dark { background: var(--ink); color: var(--white); }
-    .btn-dark:hover { background: var(--sky-deep); }
-    .btn-light { background: var(--white); color: var(--ink); }
-    .btn-light:hover { background: var(--sky); }
-    .btn-outline { border-color: var(--ink); }
-    .btn-outline:hover { background: var(--ink); color: var(--white); }
-    .btn-arrow { font-size: 1rem; transition: transform .3s var(--ease); }
-    .btn:hover .btn-arrow { transform: translate(3px, -3px); }
+.eyebrow{
+  display:inline-block;font-family:var(--label);
+  font-size:.68rem;font-weight:700;letter-spacing:.36em;text-transform:uppercase;
+  color:var(--accent-ink);
+}
+.eyebrow.on-dark{color:var(--accent)}
+.lede{font-size:clamp(1.05rem,1.6vw,1.35rem);color:var(--muted);line-height:1.65}
 
-    .site-nav {
-      position: fixed; inset: 0 0 auto; z-index: 100;
-      border-bottom: 1px solid transparent;
-      transition: background .3s ease, border-color .3s ease, backdrop-filter .3s ease;
-    }
-    .site-nav.scrolled {
-      background: rgba(247, 244, 238, .88); border-color: var(--line);
-      backdrop-filter: blur(18px);
-    }
-    .nav-inner { display: flex; height: 86px; align-items: center; justify-content: space-between; gap: 28px; }
-    .logo { display: inline-flex; align-items: center; gap: 12px; line-height: 1; }
-    .logo-mark {
-      display: grid; width: 38px; height: 38px; place-items: center;
-      border-radius: 50%; background: var(--sky); font-family: var(--serif);
-      font-size: .95rem; font-weight: 700;
-    }
-    .logo-type { font-size: 1.08rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-    .logo-type small { display: block; margin-top: 6px; font-size: .58rem; font-weight: 600; letter-spacing: .23em; color: var(--muted); }
-    .nav-links { display: flex; align-items: center; gap: clamp(24px, 3vw, 46px); }
-    .nav-links > a:not(.btn) {
-      position: relative; font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
-    }
-    .nav-links > a:not(.btn)::after {
-      position: absolute; right: 0; bottom: -7px; left: 0; height: 1px;
-      background: var(--ink); content: ""; transform: scaleX(0); transform-origin: right;
-      transition: transform .3s var(--ease);
-    }
-    .nav-links > a:not(.btn):hover::after { transform: scaleX(1); transform-origin: left; }
-    .nav-toggle { display: none; width: 46px; height: 46px; padding: 0; border: 0; background: transparent; cursor: pointer; }
-    .nav-toggle span, .nav-toggle::before, .nav-toggle::after {
-      display: block; width: 25px; height: 2px; margin: 5px auto; background: var(--ink); content: "";
-      transition: transform .25s ease, opacity .25s ease;
-    }
-    .nav-toggle[aria-expanded="true"] span { opacity: 0; }
-    .nav-toggle[aria-expanded="true"]::before { transform: translateY(7px) rotate(45deg); }
-    .nav-toggle[aria-expanded="true"]::after { transform: translateY(-7px) rotate(-45deg); }
-    .mobile-menu { display: none; }
+.hero-title{
+  font-family:var(--display);font-weight:400;text-transform:uppercase;
+  font-size:clamp(3.2rem,9vw,7.2rem);line-height:1;letter-spacing:-.01em;
+}
+.hero-title .soft{
+  display:block;font-weight:400;text-transform:lowercase;
+  color:var(--accent-mid);letter-spacing:0;margin:.02em 0 .04em;
+}
+.big-title{
+  font-family:var(--display);font-weight:400;text-transform:uppercase;
+  font-size:clamp(2.4rem,6.6vw,5.4rem);line-height:1.02;letter-spacing:-.01em;
+}
+.big-title.md{font-size:clamp(2.2rem,4.8vw,4.1rem)}
+.soft-i{font-weight:400;text-transform:lowercase;color:var(--accent-mid)}
+.on-dark .soft-i,.dark .soft-i{color:var(--accent)}
 
-    .hero {
-      min-height: 100svh; padding: 130px 0 54px;
-      display: flex; align-items: center; position: relative; overflow: hidden;
-    }
-    .hero::after {
-      position: absolute; right: -5vw; bottom: -17vw; z-index: 0;
-      width: 36vw; height: 36vw; border: 1px solid var(--line); border-radius: 50%; content: "";
-    }
-    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(360px, .72fr); align-items: center; gap: clamp(44px, 7vw, 112px); position: relative; z-index: 1; }
-    .hero-kicker { display: flex; align-items: center; gap: 14px; font-size: .78rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
-    .hero-kicker span { color: var(--sky-deep); }
-    .hero-title {
-      margin: 28px 0 0; font-family: var(--serif); font-size: clamp(5rem, 12vw, 10rem);
-      font-weight: 600; letter-spacing: -.075em; line-height: .73;
-    }
-    .hero-title .sub {
-      display: block; margin: 26px 0 0 9%; color: var(--sky-deep);
-      font-family: var(--sans); font-size: clamp(.9rem, 1.35vw, 1.2rem);
-      font-weight: 700; letter-spacing: .32em; line-height: 1.4; text-transform: uppercase;
-    }
-    .hero-lede { max-width: 44ch; margin: 38px 0 0; color: var(--muted); font-size: clamp(1.05rem, 1.35vw, 1.2rem); }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 38px; }
-    .hero-media { position: relative; min-width: 0; }
-    .hero-image-wrap {
-      aspect-ratio: 4 / 5; overflow: hidden; border-radius: 220px 220px 22px 22px;
-      background: var(--sand); box-shadow: 0 34px 80px -42px rgba(16,17,19,.65);
-    }
-    .hero-image-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); }
-    .hero-image-wrap:hover img { transform: scale(1.035); }
-    .hero-stamp {
-      position: absolute; right: -34px; bottom: 42px; display: grid; width: 132px; height: 132px;
-      place-items: center; border-radius: 50%; background: var(--sky); text-align: center;
-      box-shadow: 0 20px 44px -28px rgba(16,17,19,.8);
-    }
-    .hero-stamp strong { display: block; font-family: var(--serif); font-size: 2rem; line-height: 1; }
-    .hero-stamp small { display: block; margin-top: 7px; font-size: .62rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
-    .hero-jp {
-      position: absolute; top: 32px; right: -56px; color: rgba(16,17,19,.32);
-      font-family: var(--serif); font-size: .75rem; letter-spacing: .35em; writing-mode: vertical-rl;
-    }
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  font-family:var(--label);font-size:.72rem;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;line-height:1;
+  padding:19px 34px;border-radius:999px;border:1px solid transparent;cursor:pointer;
+  transition:background .4s var(--ease),color .4s var(--ease),border-color .4s var(--ease),transform .4s var(--ease);
+}
+.btn:hover{transform:translateY(-2px)}
+.btn .arw{transition:transform .4s var(--ease)}
+.btn:hover .arw{transform:translate(3px,-3px)}
+.btn-accent{background:var(--accent);color:var(--dark)}
+.btn-accent:hover{background:var(--dark);color:#fff}
+.btn-dark{background:var(--dark);color:#fff}
+.btn-dark:hover{background:var(--accent);color:var(--dark)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:rgba(18,18,18,.35)}
+.btn-ghost:hover{background:var(--ink);color:var(--bg)}
+.btn-block{width:100%}
+.link-underline{
+  display:inline-flex;align-items:center;gap:.5em;font-weight:700;font-size:1.05rem;
+  border-bottom:2px solid var(--accent);padding-bottom:4px;transition:color .3s var(--ease),border-color .3s var(--ease)
+}
+.link-underline:hover{color:var(--accent-ink);border-color:var(--accent-ink)}
 
-    .facts { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .facts-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-    .fact { min-height: 132px; padding: 28px clamp(18px, 3vw, 38px); border-right: 1px solid var(--line); }
-    .fact:last-child { border-right: 0; }
-    .fact-label { color: var(--sky-deep); font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-    .fact-value { margin-top: 11px; font-family: var(--serif); font-size: clamp(1.12rem, 1.6vw, 1.38rem); line-height: 1.3; }
+/* ---------- Logo ---------- */
+/* il logo è già la scritta "Yappo": niente nome ripetuto accanto, solo il sottotitolo sotto */
+.logo{display:inline-flex;flex-direction:column;align-items:center;gap:4px;color:inherit;line-height:1}
+.logo .lg-mark{display:block;height:54px;width:auto;transition:height .3s var(--ease)}
+.nav.shrink .logo .lg-mark{height:42px}
+.logo .lg-sub{
+  font-family:var(--label);font-weight:700;font-size:.52rem;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--muted);padding-left:.3em;
+}
+footer .logo{align-items:flex-start}
+footer .logo .lg-mark{height:72px}
+footer .logo .lg-sub{font-size:.6rem}
 
-    .story { background: var(--white); }
-    .story-grid { display: grid; grid-template-columns: .88fr 1.12fr; align-items: center; gap: clamp(56px, 8vw, 120px); }
-    .story-image { position: relative; }
-    .story-image::before {
-      position: absolute; top: -24px; left: -24px; width: 48%; height: 44%;
-      border-radius: 24px 0 0 0; background: var(--sky); content: "";
-    }
-    .story-image img { position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 58% center; border-radius: 22px; }
-    .story-copy .section-title { max-width: 10ch; font-size: clamp(3rem, 5.7vw, 5.7rem); }
-    .story-copy p { max-width: 50ch; margin: 26px 0 0; color: var(--muted); font-size: 1.06rem; }
-    .story-points { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 42px; }
-    .story-point { padding-top: 18px; border-top: 1px solid var(--line); }
-    .story-point strong { display: block; font-family: var(--serif); font-size: 1.22rem; }
-    .story-point span { display: block; margin-top: 7px; color: var(--muted); font-size: .88rem; }
+/* ---------- Nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:90;
+  background:rgba(253,251,247,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:84px;transition:height .3s var(--ease)}
+.nav.shrink .nav-inner{height:68px}
+.nav-links{display:flex;align-items:center;gap:46px}
+.nav-links a{
+  font-family:var(--label);font-size:.68rem;font-weight:700;
+  letter-spacing:.36em;text-transform:uppercase;transition:color .3s var(--ease);
+}
+.nav-links a:hover{color:var(--accent-ink)}
+.nav-cta{
+  background:var(--accent);color:var(--dark)!important;
+  font-family:var(--label);font-size:.68rem;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;padding:14px 28px;border-radius:999px;
+  transition:background .35s var(--ease),color .35s var(--ease);
+}
+.nav-cta:hover{background:var(--dark);color:#fff!important}
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px;color:var(--ink)}
+.nav-toggle svg{width:26px;height:26px}
+.mobile-menu{display:none;background:var(--bg);border-bottom:1px solid var(--line)}
+.mobile-menu.open{display:block}
+.mobile-menu .wrap{display:flex;flex-direction:column;padding-top:8px;padding-bottom:18px}
+.mobile-menu a{
+  padding:15px 2px;border-bottom:1px solid var(--line);
+  font-family:var(--label);font-size:.72rem;font-weight:700;
+  letter-spacing:.3em;text-transform:uppercase;
+}
+.mobile-menu a.nav-cta{border:0;margin-top:14px;text-align:center}
 
-    .menu-head { display: flex; align-items: end; justify-content: space-between; gap: 42px; margin-bottom: 64px; }
-    .menu-head .section-title { max-width: 9ch; }
-    .menu-head-side { max-width: 38ch; }
-    .menu-head-side p { margin: 0 0 24px; color: var(--muted); }
-    .dish-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-    .dish { display: flex; min-height: 290px; flex-direction: column; padding: clamp(28px, 4vw, 48px); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .35s ease; }
-    .dish:hover { background: var(--sky); }
-    .dish-top { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
-    .dish-num { color: var(--sky-deep); font-size: .68rem; font-weight: 700; letter-spacing: .18em; }
-    .dish-price { font-family: var(--serif); font-size: 1.35rem; }
-    .dish h3 { margin: 44px 0 12px; font-family: var(--serif); font-size: clamp(1.65rem, 2.3vw, 2.25rem); line-height: 1.05; }
-    .dish p { margin: 0; color: var(--muted); font-size: .94rem; }
-    .dish:hover p { color: rgba(16,17,19,.72); }
+/* ---------- Hero ---------- */
+.hero{padding:70px 0 40px}
+.hero-grid{display:flex;flex-direction:row;align-items:center;gap:56px}
+.hero-copy{flex:1;min-width:0}
+.hero-copy .eyebrow{margin-bottom:28px}
+.hero-copy .lede{margin-top:34px;max-width:38ch}
+.hero-actions{margin-top:46px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+/* le immagini occupano tutta la metà destra della hero, fino al bordo della pagina */
+.hero{overflow-x:clip}
+.hero-grid{--edge:max(24px,calc((100vw - 1280px) / 2 + 24px)) ;gap:40px}
+.hero-media{position:relative;flex:none;width:min(50vw,780px);margin-right:calc(var(--edge) * -1)}
+.img-frame{
+  position:relative;overflow:hidden;border-radius:32px;aspect-ratio:4/5;
+  box-shadow:0 46px 90px -40px rgba(18,18,18,.5);background:var(--bg2);
+}
+.img-frame img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.img-frame:hover img{transform:scale(1.04)}
+/* hero: un cerchio grande + due cerchi piccoli, tutti con lo stesso linguaggio */
+.hero-media{aspect-ratio:1/1}
+.circle{position:absolute;overflow:hidden;border-radius:50%;background:var(--bg2)}
+.circle img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.circle:hover img{transform:scale(1.05)}
+.circle-main{width:94%;aspect-ratio:1/1;top:0;right:0;box-shadow:0 46px 90px -40px rgba(18,18,18,.55)}
+.circle-main,.circle-a,.circle-b{border:8px solid var(--bg)}
+.circle-a,.circle-b{box-shadow:0 26px 50px -24px rgba(18,18,18,.5);z-index:2}
+.circle-a{width:39%;aspect-ratio:1/1;left:0;bottom:0}
+.circle-b{width:28%;aspect-ratio:1/1;right:6%;bottom:-2%}
 
-    .experience { position: relative; overflow: hidden; background: var(--ink); color: var(--paper); }
-    .experience::before {
-      position: absolute; top: -32%; right: -12%; width: 48vw; height: 48vw;
-      border: 1px solid var(--line-light); border-radius: 50%; content: "";
-    }
-    .experience-grid { display: grid; grid-template-columns: 1fr .9fr; align-items: center; gap: clamp(60px, 9vw, 130px); position: relative; }
-    .experience-copy .section-title { max-width: 9ch; }
-    .experience-copy .section-title em { color: var(--sky); }
-    .experience-copy > p { max-width: 45ch; margin: 28px 0 0; color: rgba(247,244,238,.67); font-size: 1.08rem; }
-    .experience-list { display: grid; gap: 0; margin-top: 48px; }
-    .experience-item { display: grid; grid-template-columns: 52px 1fr; gap: 20px; padding: 22px 0; border-top: 1px solid var(--line-light); }
-    .experience-item .num { color: var(--sky); font-family: var(--serif); font-size: 1.35rem; }
-    .experience-item strong { display: block; font-family: var(--serif); font-size: 1.25rem; }
-    .experience-item span { display: block; margin-top: 5px; color: rgba(247,244,238,.57); font-size: .9rem; }
-    .experience-image { position: relative; }
-    .experience-image img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 200px 200px 18px 18px; }
-    .experience-note {
-      position: absolute; right: -26px; bottom: 44px; max-width: 180px; padding: 20px 22px;
-      background: var(--sky); color: var(--ink); font-size: .78rem; font-weight: 700;
-      letter-spacing: .08em; line-height: 1.5; text-transform: uppercase;
-    }
+/* ---------- Facts strip ---------- */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:90px}
+.fact{padding:30px 34px;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact .k{font-family:var(--label);font-size:.62rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--accent-ink)}
+.fact .v{font-family:var(--label);font-weight:600;font-size:1.05rem;line-height:1.3;margin-top:10px;text-transform:uppercase;letter-spacing:-.01em}
 
-    .gallery-head { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 60px; }
-    .gallery-head .section-title { max-width: 8ch; }
-    .gallery-note { max-width: 32ch; margin: 0 0 8px; color: var(--muted); }
-    .gallery-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 90px; gap: 18px; }
-    .gallery-item {
-      position: relative; overflow: hidden; padding: 0; border: 0; border-radius: 16px;
-      background: var(--sand); cursor: zoom-in;
-    }
-    .gallery-item:nth-child(1) { grid-column: span 7; grid-row: span 5; }
-    .gallery-item:nth-child(2) { grid-column: span 5; grid-row: span 4; }
-    .gallery-item:nth-child(3) { grid-column: span 5; grid-row: span 4; }
-    .gallery-item:nth-child(4) { grid-column: span 7; grid-row: span 5; }
-    .gallery-item:nth-child(5) { grid-column: span 4; grid-row: span 4; }
-    .gallery-item:nth-child(6) { grid-column: span 4; grid-row: span 4; }
-    .gallery-item:nth-child(7) { grid-column: span 4; grid-row: span 4; }
-    .gallery-item:nth-child(8) { grid-column: span 12; grid-row: span 5; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease), filter .5s ease; }
-    .gallery-item:hover img { transform: scale(1.045); filter: saturate(1.08); }
-    .gallery-label {
-      position: absolute; right: 14px; bottom: 14px; padding: 9px 12px;
-      border-radius: 999px; background: rgba(247,244,238,.9); backdrop-filter: blur(8px);
-      font-size: .67rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
-      transform: translateY(6px); opacity: 0; transition: opacity .3s ease, transform .3s ease;
-    }
-    .gallery-item:hover .gallery-label, .gallery-item:focus-visible .gallery-label { transform: none; opacity: 1; }
+/* ---------- Sezioni ---------- */
+.section{padding:clamp(80px,11vw,150px) 0}
+.alt{background:var(--bg2)}
+.sec-head{display:flex;flex-direction:row;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:80px}
+.sec-head .side{max-width:36ch}
+.sec-head .note{color:var(--muted);font-size:1rem;line-height:1.7}
+.sec-head .side .btn{margin-top:26px}
+.sec-head-center{text-align:center;margin-bottom:80px}
+.sec-head-center .big-title{margin-top:18px}
 
-    .contact { background: var(--sky); }
-    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(60px, 9vw, 130px); }
-    .contact-copy .section-title { max-width: 8ch; }
-    .contact-card { border-top: 1px solid rgba(16,17,19,.28); }
-    .contact-row { display: grid; grid-template-columns: 130px 1fr; gap: 28px; padding: 23px 0; border-bottom: 1px solid rgba(16,17,19,.28); }
-    .contact-row dt { font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
-    .contact-row dd { margin: 0; font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.55rem); line-height: 1.35; }
-    .contact-row a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
-    .hours { display: grid; gap: 10px; font-family: var(--sans); font-size: .98rem; }
-    .hours div { display: flex; justify-content: space-between; gap: 24px; }
-    .hours span:last-child { font-weight: 600; }
-    .contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+/* ---------- Storia ---------- */
+.split{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:clamp(48px,8vw,120px)}
+.story-copy .big-title{margin-top:18px}
+.story-copy p{max-width:50ch;margin-top:26px;color:var(--muted);font-size:1.06rem}
+.points{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:44px}
+.point{padding-top:18px;border-top:1px solid var(--line)}
+.point strong{display:block;font-family:var(--label);font-weight:600;text-transform:uppercase;font-size:1.05rem;letter-spacing:-.01em}
+.point span{display:block;margin-top:8px;color:var(--muted);font-size:.92rem}
 
-    .final-cta { padding: clamp(84px, 10vw, 132px) 0; background: var(--paper-deep); text-align: center; }
-    .final-cta h2 { max-width: 11ch; margin: 0 auto; font-family: var(--serif); font-size: clamp(3.3rem, 8vw, 7.2rem); font-weight: 600; letter-spacing: -.06em; line-height: .92; }
-    .final-cta h2 em { color: var(--sky-deep); font-style: normal; }
-    .final-cta p { max-width: 43ch; margin: 28px auto 34px; color: var(--muted); }
+/* ---------- Menu ---------- */
+.dishes{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.dish{
+  display:flex;flex-direction:column;min-height:300px;padding:clamp(30px,3.6vw,52px);
+  border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  transition:background .6s var(--ease);
+}
+.dish:hover{background:var(--accent)}
+.dish-top{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.dish-num{font-family:var(--label);font-size:.66rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--accent-ink);transition:color .6s var(--ease)}
+.dish-price{font-family:var(--label);font-weight:600;font-size:1.25rem}
+.dish h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(1.45rem,2.1vw,1.8rem);letter-spacing:0;margin:40px 0 14px;line-height:1.15}
+.dish p{color:var(--muted);transition:color .6s var(--ease)}
+.dish:hover p{color:rgba(18,18,18,.78)}
+.dish:hover .dish-num{color:var(--dark)}
 
-    .footer { padding: 46px 0 28px; background: var(--ink); color: var(--paper); }
-    .footer-top { display: grid; grid-template-columns: 1fr auto auto; align-items: start; gap: 56px; padding-bottom: 40px; }
-    .footer .logo-mark { color: var(--ink); }
-    .footer .logo-type small { color: rgba(247,244,238,.55); }
-    .footer-col strong { display: block; margin-bottom: 13px; color: var(--sky); font-size: .68rem; letter-spacing: .16em; text-transform: uppercase; }
-    .footer-col a, .footer-col span { display: block; color: rgba(247,244,238,.72); font-size: .9rem; line-height: 1.9; }
-    .footer-col a:hover { color: var(--white); }
-    .footer-bottom { display: flex; justify-content: space-between; gap: 24px; padding-top: 22px; border-top: 1px solid var(--line-light); color: rgba(247,244,238,.48); font-size: .76rem; }
+/* ---------- Esperienza (dark) ---------- */
+.dark{background:var(--dark);color:var(--bg);overflow:hidden}
+.dark .split{grid-template-columns:1.1fr .9fr}
+.dark .big-title{margin-top:18px}
+.dark .lead-p{max-width:46ch;margin-top:26px;color:rgba(253,251,247,.66);font-size:1.06rem}
+.values{margin-top:46px}
+.value{display:grid;grid-template-columns:64px 1fr;gap:12px;border-top:1px solid var(--line-dark);padding:26px 0}
+.value .num{font-family:var(--display);font-size:1.9rem;color:var(--accent);line-height:1}
+.value h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:1.3rem;letter-spacing:0;margin-bottom:8px}
+.value p{color:rgba(253,251,247,.62)}
+.dark .img-frame{box-shadow:0 46px 90px -40px rgba(0,0,0,.8)}
 
-    .lightbox {
-      position: fixed; inset: 0; z-index: 300; display: grid; place-items: center;
-      padding: 28px; background: rgba(9,10,11,.94); color: var(--white);
-    }
-    .lightbox[hidden] { display: none; }
-    .lightbox-figure { margin: 0; text-align: center; }
-    .lightbox-image { max-width: min(86vw, 1120px); max-height: 78vh; border-radius: 12px; object-fit: contain; }
-    .lightbox-caption { margin-top: 15px; color: rgba(255,253,248,.7); font-size: .85rem; }
-    .lightbox-btn {
-      position: absolute; display: grid; width: 48px; height: 48px; place-items: center;
-      border: 1px solid rgba(255,255,255,.3); border-radius: 50%; background: rgba(255,255,255,.08);
-      color: var(--white); cursor: pointer; transition: background .2s ease;
-    }
-    .lightbox-btn:hover { background: var(--sky-deep); }
-    .lightbox-close { top: 22px; right: 22px; font-size: 1.55rem; }
-    .lightbox-prev { top: 50%; left: 22px; transform: translateY(-50%); font-size: 1.55rem; }
-    .lightbox-next { top: 50%; right: 22px; transform: translateY(-50%); font-size: 1.55rem; }
-    .lightbox-count { position: absolute; bottom: 22px; left: 22px; font-size: .7rem; font-weight: 700; letter-spacing: .16em; }
+/* ---------- Galleria ---------- */
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2.2vw,26px)}
+.work{
+  position:relative;overflow:hidden;padding:0;border:0;border-radius:20px;aspect-ratio:1/1;
+  cursor:zoom-in;background:var(--bg2);
+}
+.work img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.work:hover img{transform:scale(1.05)}
+.work .veil{
+  position:absolute;inset:0;background:rgba(18,18,18,.4);opacity:0;
+  display:grid;place-items:center;transition:opacity .4s var(--ease);
+}
+.work:hover .veil,.work:focus-visible .veil{opacity:1}
+.work .veil span{
+  width:100px;height:100px;border-radius:50%;background:var(--accent);color:var(--dark);
+  display:grid;place-items:center;text-align:center;padding:0 12px;
+  font-family:var(--label);font-size:.62rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;line-height:1.5;
+}
 
-    .js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
-    .js .reveal.in-view { opacity: 1; transform: none; }
-    .js .reveal.delay-1 { transition-delay: .1s; }
-    .js .reveal.delay-2 { transition-delay: .2s; }
+/* ---------- Contatti ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,5vw,70px);align-items:start}
+.hours{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-bottom:34px;background:rgba(255,255,255,.5)}
+.hours .row{display:flex;justify-content:space-between;gap:16px;padding:15px 22px;border-bottom:1px solid var(--line);font-size:.94rem}
+.hours .row:last-child{border-bottom:0}
+.hours .row .d{font-family:var(--label);font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:.85rem}
+.hours .row .h{color:var(--muted);text-align:right}
+.hours .row.today{background:var(--accent-soft)}
+.hours .row.today .h{color:var(--accent-ink);font-weight:700}
+.crow{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.crow svg{width:22px;height:22px;color:var(--accent-ink);flex:none;margin-top:4px}
+.crow .k{font-family:var(--label);font-size:.6rem;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--accent-ink)}
+.crow .v{display:block;font-family:var(--label);font-weight:500;font-size:1.08rem;margin-top:6px}
+.contact-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.brand-card{display:block;overflow:hidden;border-radius:20px;background:var(--bg);box-shadow:0 40px 80px -46px rgba(18,18,18,.5)}
+.brand-card img{width:100%;height:auto}
+.map-open{margin-top:14px}
 
-    @media (max-width: 1020px) {
-      .nav-links { display: none; }
-      .nav-toggle { display: block; }
-      .mobile-menu {
-        position: fixed; inset: 86px 0 auto; display: grid; gap: 0; padding: 14px 20px 24px;
-        border-bottom: 1px solid var(--line); background: var(--paper);
-        transform: translateY(-130%); opacity: 0; pointer-events: none;
-        transition: transform .35s var(--ease), opacity .25s ease;
-      }
-      .mobile-menu.open { transform: none; opacity: 1; pointer-events: auto; }
-      .mobile-menu a { padding: 16px 2px; border-bottom: 1px solid var(--line); font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-      .mobile-menu .btn { margin-top: 18px; border-bottom: 0; }
-      .hero-grid { grid-template-columns: 1fr .76fr; gap: 54px; }
-      .hero-title { font-size: clamp(4.4rem, 11vw, 7rem); }
-      .hero-stamp { right: -18px; width: 112px; height: 112px; }
-      .facts-grid { grid-template-columns: repeat(2, 1fr); }
-      .fact:nth-child(2) { border-right: 0; }
-      .fact:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-      .dish-grid { grid-template-columns: repeat(2, 1fr); }
-      .experience-grid { grid-template-columns: 1fr 1fr; gap: 54px; }
-      .gallery-grid { grid-auto-rows: 74px; }
-      .contact-grid { gap: 60px; }
-    }
+/* ---------- CTA finale ---------- */
+.finalcta{position:relative;overflow:hidden;text-align:center;padding:clamp(110px,15vw,190px) 0}
+.finalcta .inner{position:relative;z-index:2;max-width:1000px;margin:0 auto}
+.finalcta p{margin:34px auto 50px;max-width:46ch;color:var(--muted);font-size:clamp(1.05rem,1.5vw,1.3rem)}
+.finalcta .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.bg-word{
+  position:absolute;top:50%;left:0;transform:translateY(-50%);
+  font-family:var(--display);font-weight:400;text-transform:uppercase;
+  font-size:22vw;line-height:1;white-space:nowrap;opacity:.035;user-select:none;pointer-events:none;
+}
 
-    @media (max-width: 760px) {
-      .wrap { width: min(100% - 28px, var(--max)); }
-      .section { padding: 88px 0; }
-      .nav-inner { height: 74px; }
-      .mobile-menu { inset: 74px 0 auto; }
-      .logo-type { font-size: .94rem; }
-      .logo-type small { font-size: .52rem; }
-      .hero { min-height: auto; padding: 104px 0 46px; }
-      .hero-grid { display: flex; flex-direction: column; align-items: stretch; gap: 36px; }
-      .hero-copy { display: contents; }
-      .hero-kicker { order: 1; }
-      .hero-media { order: 2; width: 88%; align-self: flex-end; }
-      .hero-title { order: 3; margin-top: 4px; font-size: clamp(4.5rem, 24vw, 7.4rem); }
-      .hero-title .sub { margin: 20px 0 0 3px; font-size: .78rem; letter-spacing: .24em; }
-      .hero-lede { order: 4; margin-top: -4px; }
-      .hero-actions { order: 5; margin-top: 2px; }
-      .hero-stamp { right: auto; bottom: -22px; left: -20px; }
-      .hero-jp { right: -30px; }
-      .facts-grid { grid-template-columns: 1fr; }
-      .fact, .fact:nth-child(2) { min-height: auto; border-right: 0; border-bottom: 1px solid var(--line); }
-      .fact:last-child { border-bottom: 0; }
-      .story-grid, .experience-grid, .contact-grid { grid-template-columns: 1fr; }
-      .story-image { width: 88%; }
-      .story-points { grid-template-columns: 1fr; }
-      .menu-head, .gallery-head { display: block; }
-      .menu-head-side, .gallery-note { margin-top: 30px; }
-      .dish-grid { grid-template-columns: 1fr; }
-      .dish { min-height: 250px; }
-      .experience-image { width: 88%; justify-self: end; }
-      .experience-note { right: -10px; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 220px; gap: 12px; }
-      .gallery-item:nth-child(n) { grid-column: span 1; grid-row: span 1; }
-      .gallery-item:nth-child(1), .gallery-item:nth-child(4), .gallery-item:nth-child(8) { grid-column: span 2; }
-      .contact-row { grid-template-columns: 1fr; gap: 8px; }
-      .footer-top { grid-template-columns: 1fr 1fr; }
-      .footer-top .logo { grid-column: 1 / -1; }
-      .footer-bottom { flex-direction: column; }
-      .lightbox { padding: 74px 18px; }
-      .lightbox-image { max-width: 94vw; max-height: 70vh; }
-      .lightbox-prev { left: 10px; }
-      .lightbox-next { right: 10px; }
-    }
+/* ---------- Footer ---------- */
+footer{background:var(--bg2);padding:clamp(80px,10vw,130px) 0 40px}
+.f-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:clamp(32px,4vw,60px);padding-bottom:clamp(60px,8vw,110px)}
+.f-claim{margin-top:30px;color:var(--muted);max-width:38ch;line-height:1.9}
+footer h5{
+  font-family:var(--label);font-size:.62rem;font-weight:700;letter-spacing:.36em;
+  text-transform:uppercase;color:var(--accent-ink);border-bottom:1px solid var(--accent);
+  padding-bottom:9px;margin-bottom:26px;display:inline-block;
+}
+.f-col a,.f-col p{
+  display:block;font-family:var(--label);font-weight:500;font-size:.85rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink);margin-bottom:14px;line-height:1.9;
+  transition:color .3s var(--ease);
+}
+.f-col a:hover{color:var(--accent-ink)}
+.f-bottom{
+  border-top:1px solid var(--line);padding-top:26px;display:flex;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;font-family:var(--label);font-size:.6rem;font-weight:700;
+  letter-spacing:.32em;text-transform:uppercase;color:#877f73;
+}
 
-    @media (max-width: 440px) {
-      .hero-actions .btn, .contact-actions .btn { width: 100%; }
-      .gallery-grid { grid-auto-rows: 180px; }
-      .footer-top { grid-template-columns: 1fr; }
-      .footer-top .logo { grid-column: auto; }
-    }
+/* ---------- Lightbox ---------- */
+.lb{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center;padding:28px;background:rgba(8,8,8,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.lb[hidden]{display:none}
+.lb-figure{margin:0;text-align:center}
+.lb-img{max-width:min(90vw,880px);max-height:78vh;object-fit:contain;border-radius:14px;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.lb-caption{margin-top:16px;color:rgba(255,255,255,.78);font-family:var(--label);font-size:.7rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase}
+.lb-btn{position:absolute;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;display:grid;place-items:center;transition:background .25s,color .25s}
+.lb-btn:hover{background:var(--accent);color:var(--dark);border-color:var(--accent)}
+.lb-btn svg{width:24px;height:24px}
+.lb-prev{left:18px;top:50%;transform:translateY(-50%)}
+.lb-next{right:18px;top:50%;transform:translateY(-50%)}
+.lb-close{top:18px;right:18px;width:46px;height:46px}
+.lb-count{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.85);font-family:var(--label);font-size:.65rem;letter-spacing:.3em}
 
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition-duration: .01ms !important; transition-delay: 0ms !important; }
-      .js .reveal { opacity: 1; transform: none; }
-    }
-  </style>
+/* ---------- Mobile call bar ---------- */
+.callbar{display:none}
+
+/* ---------- Reveal ---------- */
+.js .reveal{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .reveal.in{opacity:1;transform:translateY(0)}
+.js .reveal.d1{transition-delay:.1s}
+.js .reveal.d2{transition-delay:.2s}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .nav-links{gap:30px}
+  .hero-grid{gap:36px}
+  .dishes{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .nav-links{display:none}
+  .nav-toggle{display:block}
+  /* mobile: barra ridotta a logo centrato + menu, senza CTA (c'è la call bar) */
+  .nav-inner{position:relative;justify-content:flex-end}
+  .nav-inner>.logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+  .nav-inner>.nav-cta{display:none}
+  .hero{padding:48px 0 20px}
+  /* mobile: foto in alto, titolo sotto — la card del titolo sale a sovrapporsi un po' sulla foto */
+  .hero-grid{flex-direction:column-reverse;align-items:stretch;gap:0}
+  .hero-copy,.hero-media{width:100%;flex:none}
+  .hero-copy{margin-top:44px}
+  /* mobile: un solo riquadro con la foto intera, come prima */
+  .hero-media{max-width:none;margin-inline:0;aspect-ratio:auto}
+  .circle-main{position:relative;width:100%;border:0;border-radius:32px;top:auto;right:auto;box-shadow:0 46px 90px -40px rgba(18,18,18,.5)}
+  .circle-a,.circle-b{display:none}
+  .facts{grid-template-columns:repeat(2,1fr);margin-top:60px}
+  .fact:nth-child(2){border-right:0}
+  .fact:nth-child(1),.fact:nth-child(2){border-bottom:1px solid var(--line)}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:24px;margin-bottom:54px}
+  .split,.dark .split{grid-template-columns:1fr}
+  .split .img-frame{max-width:560px}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .wrap{padding:0 20px}
+  .facts{grid-template-columns:1fr}
+  .fact{border-right:0;border-bottom:1px solid var(--line);padding:24px 4px}
+  .fact:last-child{border-bottom:0}
+  .fact:nth-child(1),.fact:nth-child(2){border-bottom:1px solid var(--line)}
+  .points{grid-template-columns:1fr}
+  .dishes{grid-template-columns:1fr}
+  .dish{min-height:250px}
+  .works{grid-template-columns:repeat(2,1fr);gap:10px}
+  .work{border-radius:14px}
+  .work .veil span{width:78px;height:78px;font-size:.5rem}
+  .value{grid-template-columns:48px 1fr}
+  .f-grid{grid-template-columns:1fr}
+  .f-bottom{flex-direction:column;gap:12px}
+  .hero-actions{flex-direction:column;align-items:stretch;gap:22px}
+  .hero-actions .btn{order:-1}
+  .hero-actions .link-underline{align-self:flex-start}
+  .contact-cta .btn{flex:1}
+  .btn{padding:17px 26px}
+  .lb{padding:74px 14px}
+  .lb-prev{left:10px}
+  .lb-next{right:10px}
+  .callbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:80;gap:8px}
+  .callbar .cb{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px;border-radius:14px;font-family:var(--label);font-weight:700;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;box-shadow:0 12px 30px -8px rgba(0,0,0,.4)}
+  .callbar .cb svg{width:17px;height:17px}
+  .cb.solid{background:var(--dark);color:#fff}
+  .cb.ghost{background:var(--bg);color:var(--ink);border:1px solid var(--line)}
+  body{padding-bottom:78px}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition-duration:.01ms!important;transition-delay:0ms!important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
 </head>
 <body id="top">
-  <a class="skip-link" href="#main">Vai al contenuto</a>
+<a class="skip-link" href="#main">Vai al contenuto</a>
 
-  <nav class="site-nav" id="siteNav" aria-label="Navigazione principale">
-    <div class="wrap nav-inner">
-      <a class="logo" href="#top" aria-label="Yappo, torna all'inizio">
-        <span class="logo-mark" aria-hidden="true">湯</span>
-        <span class="logo-type">Yappo<small>Ramen &amp; Izakaya</small></span>
-      </a>
-      <div class="nav-links">
-        <a href="#storia">Yappo</a>
-        <a href="#menu">Menu</a>
-        <a href="#galleria">Galleria</a>
-        <a href="#contatti">Dove siamo</a>
-        <a class="btn btn-dark" href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener">Prenota <span class="btn-arrow" aria-hidden="true">↗</span></a>
-      </div>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="Yappo, torna all'inizio">
+      <img class="lg-mark" src="assets/images/yappo-logo.png" alt="Yappo" width="102" height="54" loading="eager">
+      <span class="lg-sub">Ramen &amp; Izakaya</span>
+    </a>
+    <nav class="nav-links" aria-label="Navigazione principale">
       <a href="#storia">Yappo</a>
       <a href="#menu">Menu</a>
       <a href="#galleria">Galleria</a>
       <a href="#contatti">Dove siamo</a>
-      <a class="btn btn-dark" href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener">Prenota ora <span class="btn-arrow" aria-hidden="true">↗</span></a>
-    </div>
-  </nav>
-
-  <main id="main">
-    <header class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <div class="hero-kicker"><span>San Lazzaro di Savena</span> · Bologna</div>
-          <h1 class="hero-title">Yappo<span class="sub">Ramen &amp; Izakaya</span></h1>
-          <p class="hero-lede">Brodi curati, piatti giapponesi da condividere e uno spirito contemporaneo. Un piccolo viaggio in Giappone, a due passi da Bologna.</p>
-          <div class="hero-actions">
-            <a class="btn btn-dark" href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener">Prenota un tavolo <span class="btn-arrow" aria-hidden="true">↗</span></a>
-            <a class="btn btn-outline" href="https://www.thefork.it/ristorante/yappo-ramen-izakaya-r864529/menu" target="_blank" rel="noopener">Scopri il menu</a>
-          </div>
-        </div>
-        <div class="hero-media reveal">
-          <div class="hero-image-wrap">
-            <img src="assets/images/hero-ramen.jpg" alt="Ciotola di ramen piccante Yappo con chashu, uovo marinato, verdure e alga nori" width="1024" height="1024" loading="eager">
-          </div>
-          <div class="hero-stamp" aria-label="Cucina giapponese contemporanea"><div><strong>和</strong><small>Tradizione<br>contemporanea</small></div></div>
-          <span class="hero-jp" aria-hidden="true">ラーメン ・ 居酒屋</span>
-        </div>
-      </div>
-    </header>
-
-    <section class="facts" aria-label="Informazioni rapide">
-      <div class="wrap facts-grid">
-        <div class="fact"><div class="fact-label">Cucina</div><div class="fact-value">Giapponese contemporanea</div></div>
-        <div class="fact"><div class="fact-label">Dove</div><div class="fact-value">San Lazzaro di Savena</div></div>
-        <div class="fact"><div class="fact-label">Prezzo medio</div><div class="fact-value">Circa 20 €</div></div>
-        <div class="fact"><div class="fact-label">Aperti</div><div class="fact-value">12–15 · 19–23<br>Mercoledì chiuso</div></div>
-      </div>
-    </section>
-
-    <section class="section story" id="storia">
-      <div class="wrap story-grid">
-        <div class="story-image reveal">
-          <img src="assets/images/interior.jpg" alt="Interno di Yappo con arredi azzurro polvere, legno e noren giapponese" width="1080" height="1440" loading="lazy">
-        </div>
-        <div class="story-copy reveal delay-1">
-          <span class="eyebrow">La nostra storia</span>
-          <h2 class="section-title">L’anima del Giappone, <em>qui.</em></h2>
-          <p>Yappo nasce a Bologna con l’idea di portare in tavola una cucina giapponese autentica e attuale. Dopo l’esperienza ai Giardini Margherita, oggi trova casa a San Lazzaro: un luogo informale e curato dove tradizione e creatività si incontrano.</p>
-          <p>Non solo ramen. Il menu attraversa yakisoba, riso, piccoli piatti, spiedini e street food nipponico, con proposte pensate per essere scoperte e condivise.</p>
-          <div class="story-points">
-            <div class="story-point"><strong>Brodi curati</strong><span>Tonkotsu, tori e vegetale per caratteri diversi.</span></div>
-            <div class="story-point"><strong>Spirito izakaya</strong><span>Piatti, sake e convivialità senza formalismi.</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="menu">
-      <div class="wrap">
-        <div class="menu-head">
-          <div>
-            <span class="eyebrow">Dalla cucina</span>
-            <h2 class="section-title">Piatti che parlano <em>Yappo.</em></h2>
-          </div>
-          <div class="menu-head-side">
-            <p>Una selezione dei sapori più rappresentativi. Il menu completo comprende ramen, yakimono, donburi, teishoku, dolci e bevande.</p>
-            <a class="btn btn-outline" href="https://www.thefork.it/ristorante/yappo-ramen-izakaya-r864529/menu" target="_blank" rel="noopener">Menu completo <span class="btn-arrow" aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="dish-grid">
-          <article class="dish reveal"><div class="dish-top"><span class="dish-num">01 · Firma</span><span class="dish-price">16 €</span></div><h3>Yappo Ramen</h3><p>Brodo tori al miso spicy, chashu, macinato di maiale, takana piccante, aglio nero e uovo marinato.</p></article>
-          <article class="dish reveal delay-1"><div class="dish-top"><span class="dish-num">02 · Ramen</span><span class="dish-price">15 €</span></div><h3>Tantanmen</h3><p>Brodo tonkotsu cremoso, maiale saltato, verdure, bambù, kikurage, nori e uovo marinato.</p></article>
-          <article class="dish reveal delay-2"><div class="dish-top"><span class="dish-num">03 · Ramen</span><span class="dish-price">13,90 €</span></div><h3>Chashu Ramen</h3><p>Brodo tonkotsu con chashu cotto a bassa temperatura, verdure, cipollotto e uovo marinato.</p></article>
-          <article class="dish reveal"><div class="dish-top"><span class="dish-num">04 · Yakimono</span><span class="dish-price">8 €</span></div><h3>Yakitori</h3><p>Bocconcini di pollo grigliati e glassati, serviti su spiedo in puro stile izakaya.</p></article>
-          <article class="dish reveal delay-1"><div class="dish-top"><span class="dish-num">05 · Zenshi</span><span class="dish-price">5,50 €</span></div><h3>Karaage</h3><p>Bocconcini di pollo fritti, croccanti fuori e succosi dentro, con maionese allo yuzu kosho.</p></article>
-          <article class="dish reveal delay-2"><div class="dish-top"><span class="dish-num">06 · Zenshi</span><span class="dish-price">5,50 €</span></div><h3>Takoyaki</h3><p>Polpette ripiene di polpo con maionese, katsuobushi, aonori e salsa unagi.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section experience" id="esperienza">
-      <div class="wrap experience-grid">
-        <div class="experience-copy reveal">
-          <span class="eyebrow light">L’esperienza</span>
-          <h2 class="section-title">Brodo, fuoco, <em>convivialità.</em></h2>
-          <p>Yappo porta in tavola gesti essenziali e sapori netti. Una cucina capace di essere avvolgente come un ramen e immediata come uno spiedo appena grigliato.</p>
-          <div class="experience-list">
-            <div class="experience-item"><span class="num">一</span><div><strong>Brodi diversi</strong><span>Tonkotsu intenso, tori più leggero e una proposta vegetale.</span></div></div>
-            <div class="experience-item"><span class="num">二</span><div><strong>Piccoli piatti</strong><span>Gyoza, karaage, tempura e yakimono da mettere al centro.</span></div></div>
-            <div class="experience-item"><span class="num">三</span><div><strong>Tempo condiviso</strong><span>Un ambiente contemporaneo pensato per stare bene insieme.</span></div></div>
-          </div>
-        </div>
-        <div class="experience-image reveal delay-1">
-          <img src="assets/images/ramen-selection.jpg" alt="Due ramen Yappo serviti al tavolo con chashu, gambero fritto e verdure" width="1200" height="1600" loading="lazy">
-          <div class="experience-note">Non solo ramen.<br>Un izakaya da vivere.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="galleria">
-      <div class="wrap">
-        <div class="gallery-head">
-          <div><span class="eyebrow">A tavola</span><h2 class="section-title">Uno sguardo dentro <em>Yappo.</em></h2></div>
-          <p class="gallery-note">Ramen, piccoli piatti e dettagli del locale. Seleziona una foto per guardarla più da vicino.</p>
-        </div>
-        <div class="gallery-grid">
-          <button class="gallery-item reveal" type="button" data-caption="Yappo Ramen — miso spicy e aglio nero"><img src="assets/images/hero-ramen.jpg" alt="Yappo Ramen con miso piccante, chashu e olio all'aglio nero" width="1024" height="1024" loading="lazy"><span class="gallery-label">Yappo Ramen · Apri</span></button>
-          <button class="gallery-item reveal delay-1" type="button" data-caption="Una tavola di ramen e yakisoba"><img src="assets/images/ramen-spicy.jpg" alt="Tavola imbandita con ramen piccanti, karaage ramen e yakisoba" width="1200" height="1600" loading="lazy"><span class="gallery-label">Convivialità · Apri</span></button>
-          <button class="gallery-item reveal" type="button" data-caption="Yakitori glassati"><img src="assets/images/yakitori.jpg" alt="Spiedini yakitori di pollo grigliati e glassati" width="1024" height="1024" loading="lazy"><span class="gallery-label">Yakitori · Apri</span></button>
-          <button class="gallery-item reveal delay-1" type="button" data-caption="Karaage croccante"><img src="assets/images/karaage.jpg" alt="Bocconcini di pollo karaage con maionese allo yuzu kosho" width="1024" height="1024" loading="lazy"><span class="gallery-label">Karaage · Apri</span></button>
-          <button class="gallery-item reveal" type="button" data-caption="Takoyaki con katsuobushi"><img src="assets/images/takoyaki.jpg" alt="Takoyaki con maionese, salsa unagi e fiocchi di katsuobushi" width="1024" height="1024" loading="lazy"><span class="gallery-label">Takoyaki · Apri</span></button>
-          <button class="gallery-item reveal delay-1" type="button" data-caption="Mochi gelato"><img src="assets/images/dessert.jpg" alt="Mochi gelato al matcha e altri gusti serviti con salse colorate" width="1200" height="1600" loading="lazy"><span class="gallery-label">Mochi · Apri</span></button>
-          <button class="gallery-item reveal delay-2" type="button" data-caption="Ramen e piccoli piatti"><img src="assets/images/ramen-selection.jpg" alt="Ramen Yappo con gambero fritto e chashu serviti insieme" width="1200" height="1600" loading="lazy"><span class="gallery-label">Ramen · Apri</span></button>
-          <button class="gallery-item reveal" type="button" data-caption="Gli interni di Yappo"><img src="assets/images/interior.jpg" alt="Dettaglio degli interni azzurri di Yappo con stoviglie e tenda noren" width="1080" height="1440" loading="lazy"><span class="gallery-label">Il locale · Apri</span></button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contatti">
-      <div class="wrap contact-grid">
-        <div class="contact-copy reveal">
-          <span class="eyebrow">Vieni da noi</span>
-          <h2 class="section-title">Ci vediamo da <em>Yappo.</em></h2>
-          <p class="section-intro">Siamo sulla Via Emilia, a San Lazzaro di Savena. A pranzo e a cena, dal giovedì al martedì.</p>
-        </div>
-        <div class="reveal delay-1">
-          <dl class="contact-card">
-            <div class="contact-row"><dt>Indirizzo</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Yappo%20Ramen%20Izakaya%20Via%20Emilia%20169C%20San%20Lazzaro%20di%20Savena" target="_blank" rel="noopener">Via Emilia 169C<br>40068 San Lazzaro di Savena (BO)</a></dd></div>
-            <div class="contact-row"><dt>Telefono</dt><dd><a href="tel:+390510400065">051 040 0065</a></dd></div>
-            <div class="contact-row"><dt>Orari</dt><dd class="hours"><div><span>Lun–Mar</span><span>12–15 · 19–23</span></div><div><span>Mercoledì</span><span>Chiuso</span></div><div><span>Gio–Dom</span><span>12–15 · 19–23</span></div></dd></div>
-          </dl>
-          <div class="contact-actions">
-            <a class="btn btn-dark" href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener">Prenota ora <span class="btn-arrow" aria-hidden="true">↗</span></a>
-            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Yappo%20Ramen%20Izakaya%20Via%20Emilia%20169C%20San%20Lazzaro%20di%20Savena" target="_blank" rel="noopener">Indicazioni</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="wrap reveal">
-        <h2>La tua prossima ciotola ti <em>aspetta.</em></h2>
-        <p>Scegli il tavolo, porta la compagnia. Al ramen e al resto pensiamo noi.</p>
-        <a class="btn btn-dark" href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener">Prenota da Yappo <span class="btn-arrow" aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer-top">
-        <a class="logo" href="#top" aria-label="Yappo, torna all'inizio"><span class="logo-mark" aria-hidden="true">湯</span><span class="logo-type">Yappo<small>Ramen &amp; Izakaya</small></span></a>
-        <div class="footer-col"><strong>Contatti</strong><a href="tel:+390510400065">051 040 0065</a><span>Via Emilia 169C</span><span>San Lazzaro di Savena</span></div>
-        <div class="footer-col"><strong>Seguici</strong><a href="https://www.instagram.com/yappo_bologna/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Yappo%20Ramen%20Izakaya%20Via%20Emilia%20169C%20San%20Lazzaro%20di%20Savena" target="_blank" rel="noopener">Google Maps ↗</a></div>
-      </div>
-      <div class="footer-bottom"><span>© <span id="year"></span> Yappo — Ramen &amp; Izakaya</span><span>Tradizione giapponese · Spirito contemporaneo</span></div>
-    </div>
-  </footer>
-
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galleria fotografica" hidden>
-    <button class="lightbox-btn lightbox-close" id="lightboxClose" type="button" aria-label="Chiudi galleria">×</button>
-    <button class="lightbox-btn lightbox-prev" id="lightboxPrev" type="button" aria-label="Foto precedente">‹</button>
-    <figure class="lightbox-figure"><img class="lightbox-image" id="lightboxImage" src="assets/images/hero-ramen.jpg" alt="Anteprima della galleria Yappo"><figcaption class="lightbox-caption" id="lightboxCaption"></figcaption></figure>
-    <button class="lightbox-btn lightbox-next" id="lightboxNext" type="button" aria-label="Foto successiva">›</button>
-    <div class="lightbox-count" id="lightboxCount" aria-live="polite"></div>
+    </nav>
+    <a href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener" class="nav-cta nav-cta-desktop">Prenota</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Apri il menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
   </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="wrap">
+      <a href="#storia">Yappo</a>
+      <a href="#menu">Menu</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#contatti">Dove siamo</a>
+      <a href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener" class="nav-cta">Prenota ora</a>
+    </div>
+  </div>
+</header>
 
-  <script>
-    const siteNav = document.getElementById("siteNav");
-    const navToggle = document.getElementById("navToggle");
-    const mobileMenu = document.getElementById("mobileMenu");
+<main id="main">
 
-    function closeMobileMenu() {
-      navToggle.setAttribute("aria-expanded", "false");
-      navToggle.setAttribute("aria-label", "Apri il menu");
-      mobileMenu.classList.remove("open");
-      document.body.classList.remove("menu-open");
-    }
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Yappo Ramen &amp; Izakaya">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">San Lazzaro di Savena · Bologna</span>
+        <h1 class="hero-title">
+          Ramen
+          <span class="soft">e izakaya</span>
+          Yappo
+        </h1>
+        <p class="lede">Brodi curati, piatti giapponesi da condividere e uno spirito contemporaneo. Un piccolo viaggio in Giappone, a due passi da Bologna.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="link-underline">Scopri i piatti <span class="arw">→</span></a>
+          <a href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener" class="btn btn-dark">Prenota un tavolo <span class="arw" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-media reveal d1">
+        <div class="circle circle-main">
+          <img src="assets/images/hero-ramen.jpg" alt="Ramen piccante Yappo in ciotola blu con chashu, uova marinate, alga nori e verdure" width="1024" height="1024" loading="eager">
+        </div>
+        <div class="circle circle-a">
+          <img src="assets/images/ramen-gambero.jpg" alt="Ramen con gambero fritto in tempura, uova marinate e alga nori" width="1024" height="1024" loading="lazy">
+        </div>
+        <div class="circle circle-b">
+          <img src="assets/images/ramen-uovo.jpg" alt="Ramen con fettine di carne, uova marinate, verdure e alga nori" width="1024" height="1024" loading="lazy">
+        </div>
+      </div>
+    </div>
 
-    navToggle.addEventListener("click", () => {
-      const isOpen = navToggle.getAttribute("aria-expanded") === "true";
-      navToggle.setAttribute("aria-expanded", String(!isOpen));
-      navToggle.setAttribute("aria-label", isOpen ? "Apri il menu" : "Chiudi il menu");
-      mobileMenu.classList.toggle("open", !isOpen);
-      document.body.classList.toggle("menu-open", !isOpen);
-    });
+    <div class="facts reveal d2" aria-label="Informazioni rapide">
+      <div class="fact"><div class="k">Cucina</div><div class="v">Giapponese<br>contemporanea</div></div>
+      <div class="fact"><div class="k">Dove</div><div class="v">San Lazzaro<br>di Savena (BO)</div></div>
+      <div class="fact"><div class="k">Prezzo medio</div><div class="v">Circa 20 €</div></div>
+      <div class="fact"><div class="k">Aperti</div><div class="v">12–15 · 19–23<br>Mercoledì chiuso</div></div>
+    </div>
+  </div>
+</section>
 
-    mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMobileMenu));
-    window.addEventListener("scroll", () => siteNav.classList.toggle("scrolled", window.scrollY > 20), { passive: true });
+<!-- ============ STORIA ============ -->
+<section class="section" id="storia">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="img-frame">
+        <img src="assets/images/locale-insegna.jpg" alt="Ingresso di Yappo con la vetrina e l'insegna Original Asian Food, luci calde e pavimento in marmo" width="1000" height="1250" loading="lazy">
+      </div>
+    </div>
+    <div class="story-copy reveal d1">
+      <span class="eyebrow">La nostra storia</span>
+      <h2 class="big-title md">L’anima del <span class="soft-i">giappone,</span> qui</h2>
+      <p>Yappo nasce a Bologna con l’idea di portare in tavola una cucina giapponese autentica e attuale. Dopo l’esperienza ai Giardini Margherita, oggi trova casa a San Lazzaro: un luogo informale e curato dove tradizione e creatività si incontrano.</p>
+      <p>Non solo ramen. Il menu attraversa yakisoba, riso, piccoli piatti, spiedini e street food nipponico, con proposte pensate per essere scoperte e condivise.</p>
+      <div class="points">
+        <div class="point"><strong>Brodi curati</strong><span>Tonkotsu, tori e vegetale per caratteri diversi.</span></div>
+        <div class="point"><strong>Spirito izakaya</strong><span>Piatti, sake e convivialità senza formalismi.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    const revealElements = document.querySelectorAll(".reveal");
-    if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver((entries, currentObserver) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-            currentObserver.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      revealElements.forEach((element) => observer.observe(element));
-    } else {
-      revealElements.forEach((element) => element.classList.add("in-view"));
-    }
+<!-- ============ MENU ============ -->
+<section class="section alt" id="menu">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow reveal">Dalla cucina</span>
+        <h2 class="big-title reveal" style="margin-top:18px">Piatti<br>firma</h2>
+      </div>
+      <div class="side reveal d1">
+        <p class="note">Una selezione dei sapori più rappresentativi. Il menu completo comprende ramen, yakimono, donburi, teishoku, dolci e bevande.</p>
+        <a class="btn btn-dark" href="https://www.thefork.it/ristorante/yappo-ramen-izakaya-r864529/menu" target="_blank" rel="noopener">Menu completo <span class="arw" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
 
-    const galleryItems = [...document.querySelectorAll(".gallery-item")];
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImage = document.getElementById("lightboxImage");
-    const lightboxCaption = document.getElementById("lightboxCaption");
-    const lightboxCount = document.getElementById("lightboxCount");
-    const lightboxClose = document.getElementById("lightboxClose");
-    const lightboxPrev = document.getElementById("lightboxPrev");
-    const lightboxNext = document.getElementById("lightboxNext");
-    let currentIndex = 0;
-    let lastFocused = null;
+    <div class="dishes">
+      <article class="dish reveal"><div class="dish-top"><span class="dish-num">01 · Firma</span><span class="dish-price">16 €</span></div><h3>Yappo Ramen</h3><p>Brodo tori al miso spicy, chashu, macinato di maiale, takana piccante, aglio nero e uovo marinato.</p></article>
+      <article class="dish reveal d1"><div class="dish-top"><span class="dish-num">02 · Ramen</span><span class="dish-price">15 €</span></div><h3>Tantanmen</h3><p>Brodo tonkotsu cremoso, maiale saltato, verdure, bambù, kikurage, nori e uovo marinato.</p></article>
+      <article class="dish reveal d2"><div class="dish-top"><span class="dish-num">03 · Ramen</span><span class="dish-price">13,90 €</span></div><h3>Chashu Ramen</h3><p>Brodo tonkotsu con chashu cotto a bassa temperatura, verdure, cipollotto e uovo marinato.</p></article>
+      <article class="dish reveal"><div class="dish-top"><span class="dish-num">04 · Yakimono</span><span class="dish-price">8 €</span></div><h3>Yakitori</h3><p>Bocconcini di pollo grigliati e glassati, serviti su spiedo in puro stile izakaya.</p></article>
+      <article class="dish reveal d1"><div class="dish-top"><span class="dish-num">05 · Zenshi</span><span class="dish-price">5,50 €</span></div><h3>Karaage</h3><p>Bocconcini di pollo fritti, croccanti fuori e succosi dentro, con maionese allo yuzu kosho.</p></article>
+      <article class="dish reveal d2"><div class="dish-top"><span class="dish-num">06 · Zenshi</span><span class="dish-price">5,50 €</span></div><h3>Takoyaki</h3><p>Polpette ripiene di polpo con maionese, katsuobushi, aonori e salsa unagi.</p></article>
+    </div>
+  </div>
+</section>
 
-    function updateLightbox() {
-      const item = galleryItems[currentIndex];
-      const sourceImage = item.querySelector("img");
-      lightboxImage.src = sourceImage.src;
-      lightboxImage.alt = sourceImage.alt;
-      lightboxCaption.textContent = item.dataset.caption;
-      lightboxCount.textContent = `${String(currentIndex + 1).padStart(2, "0")} / ${String(galleryItems.length).padStart(2, "0")}`;
-    }
+<!-- ============ ESPERIENZA (dark) ============ -->
+<section class="section dark" id="esperienza">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow on-dark">L’esperienza</span>
+      <h2 class="big-title md">Brodo, fuoco, <span class="soft-i">convivialità</span></h2>
+      <p class="lead-p">Yappo porta in tavola gesti essenziali e sapori netti. Una cucina capace di essere avvolgente come un ramen e immediata come uno spiedo appena grigliato.</p>
+      <div class="values">
+        <div class="value"><div class="num">01</div><div><h3>Brodi diversi</h3><p>Tonkotsu intenso, tori più leggero e una proposta vegetale.</p></div></div>
+        <div class="value"><div class="num">02</div><div><h3>Piccoli piatti</h3><p>Gyoza, karaage, tempura e yakimono da mettere al centro.</p></div></div>
+        <div class="value"><div class="num">03</div><div><h3>Tempo condiviso</h3><p>Un ambiente contemporaneo pensato per stare bene insieme.</p></div></div>
+      </div>
+    </div>
+    <div class="reveal d1">
+      <div class="img-frame">
+        <img src="assets/images/locale-bancone.jpg" alt="Il bancone di Yappo illuminato di azzurro, con bottiglie e piante" width="900" height="1125" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
 
-    function openLightbox(index) {
-      currentIndex = index;
-      lastFocused = document.activeElement;
-      updateLightbox();
-      lightbox.hidden = false;
-      document.body.classList.add("lightbox-open");
-      lightboxClose.focus();
-    }
+<!-- ============ GALLERIA ============ -->
+<section class="section" id="galleria">
+  <div class="wrap">
+    <div class="sec-head-center reveal">
+      <span class="eyebrow">A tavola</span>
+      <h2 class="big-title">Galleria</h2>
+    </div>
 
-    function closeLightbox() {
-      lightbox.hidden = true;
-      document.body.classList.remove("lightbox-open");
-      if (lastFocused) lastFocused.focus();
-    }
+    <div class="works" id="works">
+      <button class="work reveal" type="button" data-caption="Ramen con uovo marinato"><img src="assets/images/ramen-miso.jpg" alt="Ramen in ciotola blu con uovo marinato, alga nori, verdure e bambù" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal d1" type="button" data-caption="Yakitori"><img src="assets/images/yakitori.jpg" alt="Spiedini yakitori di pollo grigliati e glassati su un letto di cavolo" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal d2" type="button" data-caption="Ramen in ciotola nera"><img src="assets/images/ramen-nero.jpg" alt="Ramen in ciotola nera con uova marinate, funghi e fettine di carne" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal" type="button" data-caption="Takoyaki"><img src="assets/images/takoyaki.jpg" alt="Takoyaki con maionese e fiocchi di katsuobushi in una ciotola scura" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal d1" type="button" data-caption="Gyoza"><img src="assets/images/gyoza.jpg" alt="Gyoza verdi serviti su un vassoio scuro con salsa" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal d2" type="button" data-caption="Ramen con karaage"><img src="assets/images/ramen-karaage.jpg" alt="Ramen con bocconcini di pollo fritto, uova marinate e verdure" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal" type="button" data-caption="Katsu curry"><img src="assets/images/katsu-curry.jpg" alt="Cotoletta katsu con curry e riso bianco su piatto bianco" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal d1" type="button" data-caption="Tempura di gambero"><img src="assets/images/tempura.jpg" alt="Gamberi in tempura croccante serviti con salsa" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal d2" type="button" data-caption="Ramen con verdure e alga nori"><img src="assets/images/ramen-verdure.jpg" alt="Ramen con pak choi, uovo marinato e alga nori" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal" type="button" data-caption="Karaage"><img src="assets/images/karaage.jpg" alt="Karaage di pollo croccante con maionese allo yuzu kosho" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal d1" type="button" data-caption="Donburi"><img src="assets/images/donburi.jpg" alt="Donburi con carne glassata e uovo su riso, in una ciotola bianca" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+      <button class="work reveal d2" type="button" data-caption="Fritti croccanti"><img src="assets/images/fritti.jpg" alt="Piatto di fritti dorati e croccanti" width="1024" height="1024" loading="lazy"><span class="veil" aria-hidden="true"><span>Apri</span></span></button>
+    </div>
+  </div>
+</section>
 
-    function moveLightbox(step) {
-      currentIndex = (currentIndex + step + galleryItems.length) % galleryItems.length;
-      updateLightbox();
-    }
+<!-- ============ CONTATTI ============ -->
+<section class="section alt" id="contatti">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow reveal">Vieni da noi</span>
+        <h2 class="big-title reveal" style="margin-top:18px">Ci vediamo<br>da Yappo</h2>
+      </div>
+      <div class="side reveal d1">
+        <p class="note">Siamo sulla Via Emilia, a San Lazzaro di Savena. A pranzo e a cena, dal giovedì al martedì.</p>
+      </div>
+    </div>
 
-    galleryItems.forEach((item, index) => item.addEventListener("click", () => openLightbox(index)));
-    lightboxClose.addEventListener("click", closeLightbox);
-    lightboxPrev.addEventListener("click", () => moveLightbox(-1));
-    lightboxNext.addEventListener("click", () => moveLightbox(1));
-    lightbox.addEventListener("click", (event) => { if (event.target === lightbox) closeLightbox(); });
+    <div class="contact-grid">
+      <div class="reveal">
+        <ul class="hours" id="hours" aria-label="Orari di apertura">
+          <li class="row" data-day="1"><span class="d">Lunedì</span><span class="h">12–15 · 19–23</span></li>
+          <li class="row" data-day="2"><span class="d">Martedì</span><span class="h">12–15 · 19–23</span></li>
+          <li class="row" data-day="3"><span class="d">Mercoledì</span><span class="h">Chiuso</span></li>
+          <li class="row" data-day="4"><span class="d">Giovedì</span><span class="h">12–15 · 19–23</span></li>
+          <li class="row" data-day="5"><span class="d">Venerdì</span><span class="h">12–15 · 19–23</span></li>
+          <li class="row" data-day="6"><span class="d">Sabato</span><span class="h">12–15 · 19–23</span></li>
+          <li class="row" data-day="0"><span class="d">Domenica</span><span class="h">12–15 · 19–23</span></li>
+        </ul>
+        <div class="crow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><span class="k">Indirizzo</span><a class="v" href="https://www.google.com/maps/search/?api=1&query=Yappo%20Ramen%20Izakaya%20Via%20Emilia%20169C%20San%20Lazzaro%20di%20Savena" target="_blank" rel="noopener">Via Emilia 169C, 40068 San Lazzaro di Savena (BO)</a></div>
+        </div>
+        <div class="crow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>
+          <div><span class="k">Telefono</span><a class="v" href="tel:+390510400065">051 040 0065</a></div>
+        </div>
+        <div class="contact-cta">
+          <a href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener" class="btn btn-accent">Prenota ora <span class="arw" aria-hidden="true">↗</span></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Yappo%20Ramen%20Izakaya%20Via%20Emilia%20169C%20San%20Lazzaro%20di%20Savena" target="_blank" rel="noopener" class="btn btn-ghost">Indicazioni</a>
+        </div>
+      </div>
 
-    document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !lightbox.hidden) closeLightbox();
-      if (event.key === "ArrowLeft" && !lightbox.hidden) moveLightbox(-1);
-      if (event.key === "ArrowRight" && !lightbox.hidden) moveLightbox(1);
-      if (event.key === "Tab" && !lightbox.hidden) {
-        const controls = [lightboxClose, lightboxPrev, lightboxNext];
-        const first = controls[0];
-        const last = controls[controls.length - 1];
-        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-        if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      <div class="reveal d1">
+        <a class="brand-card" href="https://www.google.com/maps/search/?api=1&query=Yappo%20Ramen%20Izakaya%20Via%20Emilia%20169C%20San%20Lazzaro%20di%20Savena" target="_blank" rel="noopener" aria-label="Yappo Ramen &amp; Izakaya: apri la posizione in Google Maps">
+          <img src="assets/images/logo-yappo.jpg" alt="Logo Yappo Ramen &amp; Izakaya in lettering a pennello su fondo beige" width="1200" height="1133" loading="lazy">
+        </a>
+        <a class="btn btn-dark btn-block map-open" href="https://www.google.com/maps/search/?api=1&query=Yappo%20Ramen%20Izakaya%20Via%20Emilia%20169C%20San%20Lazzaro%20di%20Savena" target="_blank" rel="noopener">Apri in Google Maps <span class="arw" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINALE ============ -->
+<section class="finalcta">
+  <div class="wrap">
+    <div class="inner reveal">
+      <h2 class="big-title">La tua prossima ciotola ti <span class="soft-i">aspetta</span></h2>
+      <p>Scegli il tavolo, porta la compagnia. Al ramen e al resto pensiamo noi.</p>
+      <div class="cta-row">
+        <a href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener" class="btn btn-dark">Prenota da Yappo <span class="arw" aria-hidden="true">↗</span></a>
+        <a href="https://www.thefork.it/ristorante/yappo-ramen-izakaya-r864529/menu" target="_blank" rel="noopener" class="btn btn-ghost">Scopri il menu</a>
+      </div>
+    </div>
+  </div>
+  <div class="bg-word" aria-hidden="true">YAPPO YAPPO</div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap f-grid">
+    <div>
+      <a class="logo" href="#top" aria-label="Yappo, torna all'inizio">
+        <img class="lg-mark" src="assets/images/yappo-logo.png" alt="Yappo" width="136" height="72" loading="lazy">
+        <span class="lg-sub">Ramen &amp; Izakaya</span>
+      </a>
+      <p class="f-claim">Ramen e cucina giapponese contemporanea a San Lazzaro di Savena. Brodi curati, piatti da condividere, spirito izakaya.</p>
+    </div>
+    <div class="f-col">
+      <h5>Contatti</h5>
+      <a href="tel:+390510400065">051 040 0065</a>
+      <p>Via Emilia 169C<br>40068 San Lazzaro di Savena</p>
+    </div>
+    <div class="f-col">
+      <h5>Seguici</h5>
+      <a href="https://www.instagram.com/yappo_bologna/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Yappo%20Ramen%20Izakaya%20Via%20Emilia%20169C%20San%20Lazzaro%20di%20Savena" target="_blank" rel="noopener">Google Maps ↗</a>
+    </div>
+  </div>
+  <div class="wrap f-bottom">
+    <span>© <span id="year"></span> Yappo — Ramen &amp; Izakaya</span>
+    <span>Tradizione giapponese · Spirito contemporaneo</span>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Galleria fotografica" hidden>
+  <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Chiudi galleria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Foto precedente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <figure class="lb-figure"><img class="lb-img" id="lbImg" src="assets/images/ramen-miso.jpg" alt="Anteprima della galleria Yappo"><figcaption class="lb-caption" id="lbCaption"></figcaption></figure>
+  <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Foto successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="lb-count" id="lbCount" aria-live="polite"></div>
+</div>
+
+<!-- ============ MOBILE CALL BAR ============ -->
+<div class="callbar">
+  <a class="cb solid" href="https://pnssm.pro/4ehzlqm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke-linecap="round"/></svg>Prenota</a>
+  <a class="cb ghost" href="tel:+390510400065"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>Chiama</a>
+</div>
+
+<script>
+/* ---- Nav: shrink allo scroll + menu mobile ---- */
+const nav = document.getElementById("nav");
+const navToggle = document.getElementById("navToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove("open");
+  navToggle.setAttribute("aria-expanded", "false");
+  navToggle.setAttribute("aria-label", "Apri il menu");
+}
+
+navToggle.addEventListener("click", () => {
+  const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+  mobileMenu.classList.toggle("open", !isOpen);
+  navToggle.setAttribute("aria-expanded", String(!isOpen));
+  navToggle.setAttribute("aria-label", isOpen ? "Apri il menu" : "Chiudi il menu");
+});
+mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMobileMenu));
+window.addEventListener("scroll", () => nav.classList.toggle("shrink", window.scrollY > 30), { passive: true });
+
+/* ---- Evidenzia la riga di oggi negli orari ---- */
+const todayRow = document.querySelector(`.hours .row[data-day="${new Date().getDay()}"]`);
+if (todayRow) {
+  todayRow.classList.add("today");
+  todayRow.setAttribute("aria-current", "date");
+}
+
+/* ---- Anno ---- */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ---- Scroll reveal ---- */
+const revealElements = document.querySelectorAll(".reveal");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if ("IntersectionObserver" in window && !prefersReducedMotion) {
+  const observer = new IntersectionObserver((entries, currentObserver) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in");
+        currentObserver.unobserve(entry.target);
       }
     });
+  }, { threshold: 0.12 });
+  revealElements.forEach((element) => observer.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add("in"));
+}
 
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+/* ---- Lightbox galleria ---- */
+const workItems = [...document.querySelectorAll("#works .work")];
+const lightbox = document.getElementById("lightbox");
+const lbImg = document.getElementById("lbImg");
+const lbCaption = document.getElementById("lbCaption");
+const lbCount = document.getElementById("lbCount");
+const lbClose = document.getElementById("lbClose");
+const lbPrev = document.getElementById("lbPrev");
+const lbNext = document.getElementById("lbNext");
+let currentIndex = 0;
+let lastFocused = null;
+
+function updateLightbox() {
+  const item = workItems[currentIndex];
+  const sourceImage = item.querySelector("img");
+  lbImg.src = sourceImage.getAttribute("src");
+  lbImg.alt = sourceImage.alt;
+  lbCaption.textContent = item.dataset.caption;
+  lbCount.textContent = `${String(currentIndex + 1).padStart(2, "0")} / ${String(workItems.length).padStart(2, "0")}`;
+}
+
+function openLightbox(index) {
+  currentIndex = index;
+  lastFocused = document.activeElement;
+  updateLightbox();
+  lightbox.hidden = false;
+  document.body.classList.add("lightbox-open");
+  lbClose.focus();
+}
+
+function closeLightbox() {
+  lightbox.hidden = true;
+  document.body.classList.remove("lightbox-open");
+  if (lastFocused) lastFocused.focus();
+}
+
+function moveLightbox(step) {
+  currentIndex = (currentIndex + step + workItems.length) % workItems.length;
+  updateLightbox();
+}
+
+workItems.forEach((item, index) => item.addEventListener("click", () => openLightbox(index)));
+lbClose.addEventListener("click", closeLightbox);
+lbPrev.addEventListener("click", () => moveLightbox(-1));
+lbNext.addEventListener("click", () => moveLightbox(1));
+lightbox.addEventListener("click", (event) => { if (event.target === lightbox) closeLightbox(); });
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    if (!lightbox.hidden) closeLightbox();
+    else closeMobileMenu();
+  }
+  if (lightbox.hidden) return;
+  if (event.key === "ArrowLeft") moveLightbox(-1);
+  if (event.key === "ArrowRight") moveLightbox(1);
+  if (event.key === "Tab") {
+    const controls = [lbClose, lbPrev, lbNext];
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  }
+});
+</script>
 </body>
 </html>
