@@ -258,9 +258,11 @@ footer .logo .lg-sub{font-size:.6rem}
   transition:background .6s var(--ease);
 }
 .dish:hover{background:var(--accent)}
-.dish-top{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.dish-top{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .dish-num{font-family:var(--label);font-size:.66rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--accent-ink);transition:color .6s var(--ease)}
 .dish-price{font-family:var(--label);font-weight:600;font-size:1.25rem}
+.dish-thumb{width:52px;height:52px;border-radius:50%;overflow:hidden;flex:none;border:2px solid var(--bg2)}
+.dish-thumb img{width:100%;height:100%;object-fit:cover}
 .dish h3{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(1.45rem,2.1vw,1.8rem);letter-spacing:0;margin:40px 0 14px;line-height:1.15}
 .dish p{color:var(--muted);transition:color .6s var(--ease)}
 .dish:hover p{color:rgba(18,18,18,.78)}
@@ -383,9 +385,9 @@ footer h5{
   .nav-inner{position:relative;justify-content:flex-end}
   .nav-inner>.logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
   .nav-inner>.nav-cta{display:none}
-  .hero{padding:20px 0}
-  /* mobile: la foto riempie lo sfondo dell'hero, titolo e testo centrati sopra con velo scuro */
-  .hero-grid{position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:82svh;border-radius:32px;overflow:hidden;padding:40px 24px;box-shadow:0 46px 90px -40px rgba(18,18,18,.5)}
+  .hero{padding:0}
+  /* mobile: la foto riempie tutto lo sfondo dell'hero, edge-to-edge, senza box/bordi — titolo e testo centrati sopra con velo scuro */
+  .hero-grid{position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:100svh;width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);border-radius:0;overflow:hidden;padding:40px 24px;box-shadow:none}
   .hero-grid::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(18,18,18,.3),rgba(18,18,18,.78))}
   .hero-copy,.hero-media{width:100%;flex:none}
   .hero-copy{position:relative;z-index:1;margin-top:0;display:flex;flex-direction:column;align-items:center}
@@ -398,6 +400,7 @@ footer h5{
   /* la foto occupa tutto il riquadro come sfondo */
   .hero-media{position:absolute;inset:0;z-index:-1;max-width:none;margin-inline:0;aspect-ratio:auto}
   .circle-main{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0;box-shadow:none;top:auto;right:auto}
+  .circle-main img{object-position:50% 42%}
   .circle-a,.circle-b{display:none}
   .facts{grid-template-columns:repeat(2,1fr);margin-top:60px}
   .fact:nth-child(2){border-right:0}
@@ -554,9 +557,9 @@ footer h5{
     </div>
 
     <div class="dishes">
-      <article class="dish reveal"><div class="dish-top"><span class="dish-num">01 · Firma</span><span class="dish-price">16 €</span></div><h3>Yappo Ramen</h3><p>Brodo tori al miso spicy, chashu, macinato di maiale, takana piccante, aglio nero e uovo marinato.</p></article>
-      <article class="dish reveal d1"><div class="dish-top"><span class="dish-num">02 · Ramen</span><span class="dish-price">15 €</span></div><h3>Tantanmen</h3><p>Brodo tonkotsu cremoso, maiale saltato, verdure, bambù, kikurage, nori e uovo marinato.</p></article>
-      <article class="dish reveal d2"><div class="dish-top"><span class="dish-num">03 · Ramen</span><span class="dish-price">13,90 €</span></div><h3>Chashu Ramen</h3><p>Brodo tonkotsu con chashu cotto a bassa temperatura, verdure, cipollotto e uovo marinato.</p></article>
+      <article class="dish reveal"><div class="dish-top"><span class="dish-num">01 · Firma</span><span class="dish-thumb"><img src="assets/images/ramen-nero.jpg" alt="" width="104" height="104" loading="lazy"></span></div><h3>Yappo Ramen</h3><p>Brodo tori al miso spicy, chashu, macinato di maiale, takana piccante, aglio nero e uovo marinato.</p></article>
+      <article class="dish reveal d1"><div class="dish-top"><span class="dish-num">02 · Ramen</span><span class="dish-thumb"><img src="assets/images/ramen-miso.jpg" alt="" width="104" height="104" loading="lazy"></span></div><h3>Tantanmen</h3><p>Brodo tonkotsu cremoso, maiale saltato, verdure, bambù, kikurage, nori e uovo marinato.</p></article>
+      <article class="dish reveal d2"><div class="dish-top"><span class="dish-num">03 · Ramen</span><span class="dish-thumb"><img src="assets/images/ramen-uovo.jpg" alt="" width="104" height="104" loading="lazy"></span></div><h3>Chashu Ramen</h3><p>Brodo tonkotsu con chashu cotto a bassa temperatura, verdure, cipollotto e uovo marinato.</p></article>
       <article class="dish reveal"><div class="dish-top"><span class="dish-num">04 · Yakimono</span><span class="dish-price">8 €</span></div><h3>Yakitori</h3><p>Bocconcini di pollo grigliati e glassati, serviti su spiedo in puro stile izakaya.</p></article>
       <article class="dish reveal d1"><div class="dish-top"><span class="dish-num">05 · Zenshi</span><span class="dish-price">5,50 €</span></div><h3>Karaage</h3><p>Bocconcini di pollo fritti, croccanti fuori e succosi dentro, con maionese allo yuzu kosho.</p></article>
       <article class="dish reveal d2"><div class="dish-top"><span class="dish-num">06 · Zenshi</span><span class="dish-price">5,50 €</span></div><h3>Takoyaki</h3><p>Polpette ripiene di polpo con maionese, katsuobushi, aonori e salsa unagi.</p></article>
