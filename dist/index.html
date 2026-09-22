@@ -378,13 +378,21 @@ footer h5{
   .hero-grid{gap:36px}
   .dishes{grid-template-columns:repeat(2,1fr)}
 }
-@media (max-width:900px){
+/* tablet (768–899px): tiene la barra completa (link + Prenota) invece dell'hamburger, un po' più stretta */
+@media (max-width:899px) and (min-width:768px){
+  .nav-links{gap:20px}
+  .nav-links a{font-size:.62rem;letter-spacing:.22em}
+  .nav-cta{padding:12px 22px;font-size:.62rem;letter-spacing:.14em}
+}
+@media (max-width:767px){
   .nav-links{display:none}
   .nav-toggle{display:block}
-  /* mobile: barra ridotta a logo centrato + menu, senza CTA (c'è la call bar) */
+  /* telefono: barra ridotta a logo centrato + menu, senza CTA (c'è la call bar) */
   .nav-inner{position:relative;justify-content:flex-end}
   .nav-inner>.logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
   .nav-inner>.nav-cta{display:none}
+}
+@media (max-width:900px){
   .hero{padding:0}
   /* mobile: la foto riempie tutto lo sfondo dell'hero, edge-to-edge, senza box/bordi — titolo e testo centrati sopra con velo scuro */
   .hero-grid{position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:100svh;width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);border-radius:0;overflow:hidden;padding:40px 24px;box-shadow:none}
