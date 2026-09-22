@@ -383,14 +383,21 @@ footer h5{
   .nav-inner{position:relative;justify-content:flex-end}
   .nav-inner>.logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
   .nav-inner>.nav-cta{display:none}
-  .hero{padding:48px 0 20px}
-  /* mobile: foto in alto, titolo sotto — la card del titolo sale a sovrapporsi un po' sulla foto */
-  .hero-grid{flex-direction:column-reverse;align-items:stretch;gap:0}
+  .hero{padding:20px 0}
+  /* mobile: la foto riempie lo sfondo dell'hero, titolo e testo centrati sopra con velo scuro */
+  .hero-grid{position:relative;isolation:isolate;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:82svh;border-radius:32px;overflow:hidden;padding:40px 24px;box-shadow:0 46px 90px -40px rgba(18,18,18,.5)}
+  .hero-grid::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(18,18,18,.3),rgba(18,18,18,.78))}
   .hero-copy,.hero-media{width:100%;flex:none}
-  .hero-copy{margin-top:44px}
-  /* mobile: un solo riquadro con la foto intera, come prima */
-  .hero-media{max-width:none;margin-inline:0;aspect-ratio:auto}
-  .circle-main{position:relative;width:100%;border:0;border-radius:32px;top:auto;right:auto;box-shadow:0 46px 90px -40px rgba(18,18,18,.5)}
+  .hero-copy{position:relative;z-index:1;margin-top:0;display:flex;flex-direction:column;align-items:center}
+  .hero-copy .eyebrow{color:#fff}
+  .hero-title{color:#fff}
+  .hero-copy .lede{color:rgba(255,255,255,.86);margin-left:auto;margin-right:auto;text-align:center}
+  .hero-actions{justify-content:center}
+  .hero-actions .link-underline{color:#fff;border-color:#fff}
+  .hero-actions .link-underline:hover{color:var(--accent);border-color:var(--accent)}
+  /* la foto occupa tutto il riquadro come sfondo */
+  .hero-media{position:absolute;inset:0;z-index:-1;max-width:none;margin-inline:0;aspect-ratio:auto}
+  .circle-main{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0;box-shadow:none;top:auto;right:auto}
   .circle-a,.circle-b{display:none}
   .facts{grid-template-columns:repeat(2,1fr);margin-top:60px}
   .fact:nth-child(2){border-right:0}
@@ -418,6 +425,7 @@ footer h5{
   .hero-actions{flex-direction:column;align-items:stretch;gap:22px}
   .hero-actions .btn{order:-1}
   .hero-actions .link-underline{align-self:flex-start}
+  .hero .hero-actions .link-underline{align-self:center}
   .contact-cta .btn{flex:1}
   .btn{padding:17px 26px}
   .lb{padding:74px 14px}
